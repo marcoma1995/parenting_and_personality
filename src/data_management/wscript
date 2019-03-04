@@ -3,10 +3,16 @@
 
 def build(ctx):
 
-    # Illustrate simple use of run_py_script
-    ctx(
-        features='run_py_script',
-        source='get_simulation_draws.py',
-        target=ctx.path_to(ctx, 'OUT_DATA', 'initial_locations.csv'),
-        name='get_simulation_draws'
-    )
+    for s in 'child_basic', 'measure_personality_children', 'measure_parental_involvment', 'hh_control', 'children_control', 'measure_personality_adult', 'children_siblings', 'measure_personality_mother', 'measure_personality_father', 'father_control', 'mother_control', 'merge', 'merge_male', 'merge_female':
+        ctx(
+            features='run_py_script',
+            source=s + '.py',
+            target=ctx.path_to(ctx, 'OUT_DATA', s + '.csv'),
+            name=s
+        )
+
+
+
+
+
+
