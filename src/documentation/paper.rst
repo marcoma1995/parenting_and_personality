@@ -5,9 +5,7 @@ Research paper / presentations
 ******************************
 
 
-Purpose of the different files (rename them to your liking):
+Purpose of the different files:
 
-    * :file:`research_paper.tex` contains the actual paper.
-    * :file:`research_pres_30min.tex` contains a typical conference presentation.
-    * :file:`research_pres_90min.tex` contains a full-length seminar presentation (add by yourself).
-    * :file:`formulas` contains short files with the LaTeX formulas -- put these into a library for re-use in paper and presentations.
+    * :file:`parenting_and_personality_research_paper.tex` contains the actual paper.
+    * :file:`brief_introduction_of_the_project.tex` contains a handout for a typical conference presentation.

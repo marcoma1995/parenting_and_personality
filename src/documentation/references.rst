@@ -4,5 +4,4 @@
 References
 **********
 
-.. bibliography:: ../paper/refs.bib
-   :style: plain
+I included the reference I used for this project in the bibliography, inside the file refs.bib.
