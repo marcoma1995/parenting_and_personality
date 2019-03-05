@@ -9,22 +9,22 @@ from bld.project_paths import project_paths_join as ppj
 barWidth = 0.5
 
 # Choose the height of the mixed mothers involvment bars.
-bars1 = [0.09, 0.09, 0.04, 0.06, 0.13, 0.06]
+bars1 = [0.09, 0.09, 0.04, 0.05, 0.15, 0.04]
 
 # Choose the height of the female mothers involvement bar.
-bars2 = [0.11, 0.06, 0.04, 0.03, 0.11, 0.06]
+bars2 = [0.13, 0.07, 0.02, 0.03, 0.13, 0.06]
 
 # Choose the height of the male mothers involvement bar.
-bars3 = [0.07, 0.06, 0.00, 0.05, 0.11, 0.01]
+bars3 = [0.06, 0.06, 0.01, 0.04, 0.11, -0.02]
 
 # Choose the height of the error bars mother both.
-yer1 = [0.04, 0.04, 0.04, 0.04, 0.04, 0.04]
+yer1 = [0.04, 0.03, 0.03, 0.03, 0.03, 0.03]
 
 # Choose the height of the error bars mother female.
-yer2 = [0.05, 0.05, 0.05, 0.05, 0.05, 0.05]
+yer2 = [0.05, 0.05, 0.04, 0.05, 0.04, 0.04]
 
 # Choose the height of the error bars mother male.
-yer3 = [0.06, 0.05, 0.05, 0.05, 0.05, 0.05]
+yer3 = [0.05, 0.04, 0.04, 0.05, 0.04, 0.05]
 
 # The x position of bars.
 r1 = (np.arange(len(bars1))) * 1.7
@@ -65,22 +65,22 @@ plt.savefig(ppj("OUT_FIGURES", "figure_maternal_involvement_personality.jpeg"))
 barWidth = 0.5
 
 # Choose the height of the mixed fathers involvment bars.
-bars4 = [0.05, 0.05, 0.16, 0.07, 0.05, -0.09]
+bars4 = [0.08, 0.04, 0.16, 0.09, 0.03, -0.10]
 
 # Choose the height of the female fathers involvement bar.
-bars5 = [0.02, 0.09, 0.15, 0.04, 0.06, -0.13]
+bars5 = [0.02, 0.10, 0.16, 0.06, 0.04, -0.17]
 
 # Choose the height of the male fathers involvement bar.
-bars6 = [0.14, 0.06, 0.23, 0.14, 0.10, 0.00]
+bars6 = [0.14, 0.04, 0.22, 0.17, 0.09, 0.01]
 
 # Choose the height of the error bars father both.
-yer4 = [0.04, 0.05, 0.04, 0.05, 0.04, 0.05]
+yer4 = [0.04, 0.04, 0.04, 0.04, 0.04, 0.04]
 
 # Choose the height of the error bars father female.
-yer5 = [0.05, 0.06, 0.06, 0.07, 0.06, 0.06]
+yer5 = [0.05, 0.06, 0.05, 0.06, 0.05, 0.05]
 
 # Choose the height of the error bars father male.
-yer6 = [0.07, 0.06, 0.06, 0.07, 0.06, 0.07]
+yer6 = [0.06, 0.05, 0.05, 0.06, 0.05, 0.06]
 
 # The x position of bars.
 r4 = (np.arange(len(bars4))) * 1.7
