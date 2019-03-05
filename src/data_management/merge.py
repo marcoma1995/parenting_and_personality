@@ -84,7 +84,6 @@ data.migration_background_strict = data.migration_background_strict.replace(
 # Create updates siblings variable.
 data['number_of_siblings'] = data.number_of_siblings.fillna(
     data.number_of_siblings_final)
-print(data.columns)
 
 # Create log income.
 data['log_monthly_hh_net_income'] = np.log(
