@@ -1,18 +1,21 @@
-#! python
-
-
 def build(ctx):
 
-    for s in 'child_basic', 'measure_personality_children', 'measure_parental_involvment', 'hh_control', 'children_control', 'measure_personality_adult', 'children_siblings', 'measure_personality_mother', 'measure_personality_father', 'father_control', 'mother_control', 'merge', 'merge_male', 'merge_female':
+    for s in 'merge', 'merge_male', 'merge_female':
+
         ctx(
             features='run_py_script',
             source=s + '.py',
+            deps=[
+                ctx.path_to(ctx, 'OUT_DATA', 'measure_personality_children.csv'),
+                ctx.path_to(ctx, 'OUT_DATA', 'measure_parental_involvment.csv'),
+                ctx.path_to(ctx, 'OUT_DATA', 'children_control.csv'),
+                ctx.path_to(ctx, 'OUT_DATA', 'mother_control.csv'),
+                ctx.path_to(ctx, 'OUT_DATA', 'father_control.csv'),
+                ctx.path_to(ctx, 'OUT_DATA', 'hh_control.csv'),
+		ctx.path_to(ctx, 'OUT_DATA', 'child_basic.csv'),
+		ctx.path_to(ctx, 'OUT_DATA', 'measure_personality_mother.csv'),
+		ctx.path_to(ctx, 'OUT_DATA', 'measure_personality_father.csv'),
+		ctx.path_to(ctx, 'OUT_DATA', 'children_siblings.csv')
+            ],
             target=ctx.path_to(ctx, 'OUT_DATA', s + '.csv'),
-            name=s
-        )
-
-
-
-
-
-
+            name=s)
